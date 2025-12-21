@@ -145,6 +145,7 @@ tracy_set_option(TRACY_DELAYED_INIT "Enable delayed initialization of the librar
 tracy_set_option(TRACY_MANUAL_LIFETIME "Enable the manual lifetime management of the profile" OFF)
 tracy_set_option(TRACY_FIBERS "Enable fibers support" OFF)
 tracy_set_option(TRACY_NO_CRASH_HANDLER "Disable crash handling" OFF)
+set_option(TRACY_DEFAULT_MEMORY_PROFLER "Enable default memory profiler on supported platforms" OFF)
 tracy_set_option(TRACY_TIMER_FALLBACK "Use lower resolution timers" OFF)
 tracy_set_option(TRACY_DISALLOW_HW_TIMER "Disallow hardware timer (may be useful on VMs). Requires TRACY_TIMER_FALLBACK=ON" OFF)
 tracy_set_option(TRACY_LIBUNWIND_BACKTRACE "Use libunwind backtracing where supported" OFF)
