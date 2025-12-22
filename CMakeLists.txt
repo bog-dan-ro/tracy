@@ -282,3 +282,9 @@ if(TRACY_CLIENT_PYTHON)
 
     add_subdirectory(python)
 endif()
+
+option(TRACY_UI_PROFILER "Whether to build profiler UI" ON)
+
+if(TRACY_UI_PROFILER)
+    add_subdirectory(profiler)
+endif()
