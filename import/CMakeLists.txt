@@ -21,7 +21,7 @@ add_executable(tracy-import-chrome
     src/import-chrome.cpp
 )
 add_git_ref(tracy-import-chrome)
-target_link_libraries(tracy-import-chrome PRIVATE TracyServer nlohmann_json::nlohmann_json)
+target_link_libraries(tracy-import-chrome PRIVATE TracyServer)
 
 add_executable(tracy-import-fuchsia
     src/import-fuchsia.cpp
